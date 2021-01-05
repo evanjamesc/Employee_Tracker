@@ -38,6 +38,7 @@ let menu = async () => {
                 'Change Employee Manager',
                 'Add Department',
                 'Add Role',
+                'EXIT'
             ]
         }]);
 
@@ -64,6 +65,9 @@ let menu = async () => {
             viewEmployees();
             break;
         case 'Add Department':
+            viewEmployees();
+            break;
+        case 'Add Role':
             viewEmployees();
             break;
         case 'Add Role':
