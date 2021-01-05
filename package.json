@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/evanjamesc/Employee_Tracker/issues"
   },
-  "homepage": "https://github.com/evanjamesc/Employee_Tracker#readme"
+  "homepage": "https://github.com/evanjamesc/Employee_Tracker#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {}
 }
