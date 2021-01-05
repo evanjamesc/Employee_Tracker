@@ -44,7 +44,7 @@ VALUES ('Sales Lead', '115000', 1),
        
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('Austin', 'Bush', 1, 3),
-	('Zach', 'Graham', 2, 1),
+('Zach', 'Graham', 2, 1),
        ('Naomi', 'Pike', 3, null),
        ('Vikram', 'Dale', 4, 3),
        ('Garrett', 'Ayers', 5, null),
