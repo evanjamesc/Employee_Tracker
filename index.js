@@ -12,8 +12,7 @@ let connection = mysql.createConnection({
     database: 'employees_db'
 });
 
-connection.connect(function(err)
-{
+connection.connect(function (err) {
     if (err) {
         console.error('Cannot connect to database: ' + err.stack);
         return;
@@ -21,3 +20,35 @@ connection.connect(function(err)
 
     console.log('Connected. ID: ');
 });
+
+let menu = async () => {
+
+    const menu = await inquirer.prompt(
+        [{
+            type: 'list',
+            message: 'Select an option:',
+            name: 'choice',
+            choices: [
+                'View Employees',
+                'View Departments',
+                'View Roles',
+                'Add Employee',
+                'Remove Employee',
+                'Change Employee Role',
+                'Change Employee Manager',
+                'Add Department',
+                'AddRole',
+            ]
+        }]);
+
+    switch (menu.choice) {
+        case 'View Employees':
+            viewEmployees();
+            break;
+    }
+
+}
+
+let viewEmployees = () => {
+
+}
