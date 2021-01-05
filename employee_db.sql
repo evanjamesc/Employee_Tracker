@@ -6,7 +6,7 @@ USE employees_db;
 
 CREATE TABLE department (
   id int NOT NULL AUTO_INCREMENT,
-  dpname VARCHAR(30) NOT NULL,
+  dptname VARCHAR(30) NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -14,7 +14,7 @@ CREATE TABLE employee_role (
   id int NOT NULL AUTO_INCREMENT,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL NOT NULL,
-  department_id INT NOT NULL,
+  dpt_id INT NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -27,13 +27,13 @@ CREATE TABLE employee (
   PRIMARY KEY (id)
 );
 
-INSERT INTO department (dpname)
+INSERT INTO department (dptname)
 VALUES ('Sales'),
        ('Engineering'),
        ('Financial'),
        ('Legal');
        
-INSERT INTO employee_role (title, salary, department_id)
+INSERT INTO employee_role (title, salary, dpt_id)
 VALUES ('Sales Lead', '115000', 1),
 	   ('Salesperson', '100000', 1),
        ('Lead Engineer', '145000', 2),

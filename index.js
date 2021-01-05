@@ -73,6 +73,8 @@ let menu = async () => {
         case 'Exit':
             exit();
             break;
+        default:
+            return;
     }
 
 }
