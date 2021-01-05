@@ -37,12 +37,36 @@ let menu = async () => {
                 'Change Employee Role',
                 'Change Employee Manager',
                 'Add Department',
-                'AddRole',
+                'Add Role',
             ]
         }]);
 
     switch (menu.choice) {
         case 'View Employees':
+            viewEmployees();
+            break;
+        case 'View Departments':
+            viewEmployees();
+            break;
+        case 'View Roles':
+            viewEmployees();
+            break;
+        case 'Add Employee':
+            viewEmployees();
+            break;
+        case 'Remove Employee':
+            viewEmployees();
+            break;
+        case 'Change Employee Role':
+            viewEmployees();
+            break;
+        case 'Change Employee Manager':
+            viewEmployees();
+            break;
+        case 'Add Department':
+            viewEmployees();
+            break;
+        case 'Add Role':
             viewEmployees();
             break;
     }
