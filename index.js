@@ -47,36 +47,72 @@ let menu = async () => {
             viewEmployees();
             break;
         case 'View Departments':
-            viewEmployees();
+            viewDepts();
             break;
         case 'View Roles':
-            viewEmployees();
+            viewRoles();
             break;
         case 'Add Employee':
-            viewEmployees();
+            addEmployee();
             break;
         case 'Remove Employee':
-            viewEmployees();
+            removeEmployee();
             break;
         case 'Change Employee Role':
-            viewEmployees();
+            changeRole();
             break;
         case 'Change Employee Manager':
-            viewEmployees();
+            changeManager();
             break;
         case 'Add Department':
-            viewEmployees();
+            addDept();
             break;
         case 'Add Role':
-            viewEmployees();
+            addRole();
             break;
-        case 'Add Role':
-            viewEmployees();
+        case 'Exit':
+            exit();
             break;
     }
 
 }
 
 let viewEmployees = () => {
+
+}
+
+let viewDepts = () => {
+
+}
+
+let viewRoles = () => {
+
+}
+
+let addEmployee = () => {
+
+}
+
+let removeEmployee = () => {
+
+}
+
+let changeRole = () => {
+
+}
+
+let changeManager = () => {
+
+}
+
+let addDept = () => {
+
+}
+
+let addRole = () => {
+
+}
+
+let exit = () => {
 
 }
